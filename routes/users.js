@@ -3,7 +3,7 @@ const router = express.Router();
 const passport = require('passport');
 const usersController = require('../controllers/users_controller');
 
-console.log('router-2 is loaded');
+console.log('router(user) is loaded');
 
 router.get('/profile/:id', passport.checkAuthentication,usersController.profile);
 // router.post('/update/:id', passport.checkAuthentication,usersController.update);
